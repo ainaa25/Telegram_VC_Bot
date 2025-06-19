@@ -386,9 +386,12 @@ async def main():
 
 
 import asyncio
+from pyrogram import idle
+from simba import simba
 
 async def main():
-    await app.start()
+    await simba.start()
+    print("✅ Simba Music Bot telah dihidupkan!")
     await idle()
 
 if __name__ == "__main__":
