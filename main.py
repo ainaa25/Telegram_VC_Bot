@@ -385,5 +385,11 @@ async def main():
     await session.close()
 
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+import asyncio
+
+async def main():
+    await app.start()
+    await idle()
+
+if __name__ == "__main__":
+    asyncio.run(main())
